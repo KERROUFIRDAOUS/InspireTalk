@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orangina"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Full name"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtAge"/>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="169dp"
+            android:layout_marginLeft="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Subject"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtSubject"/>
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_marginLeft="120dp"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="Submit"
+            android:onClick="buSubmit"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
